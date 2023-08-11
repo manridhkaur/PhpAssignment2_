@@ -1,0 +1,215 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:wght@100;200&display=swap');
+
+/* Resetting box sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: -20px 0 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Brand name styling */
+.brand-name {
+  color: black;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  /* Gradient background for text */
+  background-image: linear-gradient(-180deg, #000000 0%, #000000 29%, #141816 67%, #0c0f0d 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Keyframes for animation */
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 2;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 1;
+    border-radius: 50%;
+  }
+}
+
+/* Styling for h1 element */
+h1 {
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Styling for spans */
+span {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Styling for links */
+a {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #000000;
+  color: #2a8b27;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  width: 100%;
+}
+
+/* Button behavior when active */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Styling for button focus */
+button:focus {
+  outline: none;
+}
+
+/* Styling for ghost button */
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+/* Styling for form */
+form {
+  background-color: #288530;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+}
+
+/* Styling for select and input fields */
+select,
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+/* Styling for the container */
+.container {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  min-height: 520px;
+}
+
+/* Styling for the registration container */
+.container-register {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  min-height: 580px;
+  padding-bottom: 5%;
+}
+
+/* Styling for form containers */
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+/* Styling for registration container */
+.reg-container {
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Styling for right panel activation */
+.container.right-panel-active .reg-container {
+  transform: translateX(100%);
+}
+
+/* Styling for sign-up container */
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Styling for sub-container */
+.sub-container {
+  background-color: #242323;
+  width: 100%;
+  height: 150px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container-register {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Styling for close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect for close button */
+.closebtn:hover {
+  color: black;
+}

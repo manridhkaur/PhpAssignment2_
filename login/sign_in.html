@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+  <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="description" content="Sign in Page">
+  <meta name="keywords" content="Sign in Page">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="sign_in.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Container for the sign-in form -->
+  <div class="container" id="container">
+    <div class="form-container reg-container">
+      <!-- Sign-in form -->
+      <form action="sign_in.php" method="POST">
+        <div class="brand-name">Sign IN PAGE</div>
+        <span>login to access your account</span>
+
+        <!-- Input fields for email and password -->
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password_1" placeholder="Password" required />
+
+        <!-- Sign-in button -->
+        <button type="submit" name="login">Sign In</button>
+
+        <!-- Link to create an account -->
+        <a href="index.php">Create Account</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
